@@ -1,0 +1,14 @@
+#Question 2: Given a range of first 10 numbers, Iterate from start number to the end number and print the sum of the current number and previous number
+
+for x in range(10):
+    print("Current nmuber",x,end=" ")
+    if x-1<0:
+        print("Previous nmuber 0",end=" ")
+    else:
+        print("Previous nmuber",(x-1),end=" ")
+
+    sum= x+(x-1)
+    if sum<0:
+        print("Sum:  0")
+    else:
+        print("Sum: ",sum )
